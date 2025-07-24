@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: darkblue;
     --text-light: white;
@@ -29,9 +35,6 @@ main {
 
 aside {
     width: 20rem;
-    margin: var(--spacing);
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: var(--spacing);
     background-color: #eee;
     color: #333;
     text-align: center;
@@ -58,4 +61,41 @@ footer {
     margin-top: 15px;
     border-top: 1px solid var(--dark-color);
     text-align: center;
+}
+
+/* ------------------------------
+   Class Selectors
+------------------------------ */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+.profile-img {
+    float: right;
+    margin-left: 1rem;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-heading {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    font-weight: bold;
 }
