@@ -12,21 +12,19 @@
   --body-font: 'Open Sans', sans-serif;
 }
 
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
   background-color: white;
 }
 
-/* Layout Containers */
+
 header,
 main,
 footer {
@@ -34,7 +32,6 @@ footer {
   margin: 0 auto;
 }
 
-/* Header */
 header {
   background-color: var(--primary-color);
   color: var(--accent2-color);
@@ -59,7 +56,7 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-/* Headings */
+
 h1,
 h2 {
   font-family: var(--heading-font);
@@ -67,10 +64,10 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Hero Section */
+
 .hero {
   background-image: url('../images/hero.jpg');
-  /* Make sure this file exists! */
+
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -87,7 +84,7 @@ h2 {
   border-radius: 8px;
 }
 
-/* Article Section */
+
 article {
   display: flex;
   align-items: center;
@@ -100,12 +97,12 @@ article img {
   border-radius: 8px;
 }
 
-/* Sections */
+
 section {
   padding: 16px;
 }
 
-/* Gallery */
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -118,7 +115,6 @@ section {
   border-radius: 6px;
 }
 
-/* Footer */
 footer {
   background-color: var(--secondary-color);
   color: white;
