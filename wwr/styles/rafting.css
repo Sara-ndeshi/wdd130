@@ -71,12 +71,13 @@ h2 {
   background-size: cover;
   background-position: center;
   height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 }
 
 .hero h1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
   background-color: rgba(125, 131, 133, 0.8);
   color: white;
   padding: 20px;
@@ -84,24 +85,27 @@ h2 {
   border-radius: 8px;
 }
 
-
-article {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 16px;
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  max-width: 300px;
+  background-color: rgba(125, 131, 133, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
 }
 
-article img {
+.hero article img {
+  float: right;
+  margin-left: 1rem;
   width: 150px;
   border-radius: 8px;
 }
 
-
 section {
   padding: 16px;
 }
-
 
 .gallery {
   display: grid;
