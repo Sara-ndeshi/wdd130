@@ -4,42 +4,73 @@
     box-sizing: border-box;
 }
 
+/* CSS Variables */
 :root {
     --primary-color: darkblue;
     --text-light: white;
     --text-dark: black;
     --standard-spacing: 1rem;
     --thin-border: 1px solid #000;
-    --border: 1px solid var(--black);
-
+    --border: 1px solid var(--text-dark);
+    /* Fixed undefined variable */
 }
 
+/* Layout containers */
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* Navigation bar */
 nav {
-    background-color: var(--primary-color);
-    padding: 10px;
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: var(--text-light);
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
+/* Heading */
 h1 {
     color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
 }
 
+/* Grid layout */
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+/* Main and Aside positions in grid */
 main {
-    max-width: 840px;
+    grid-column: 2 / 3;
+    margin: 1rem;
 }
 
 aside {
     width: 20rem;
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     background-color: #eee;
     color: #333;
     text-align: center;
 }
 
+/* Images */
 aside img {
     width: 200px;
     height: auto;
@@ -53,10 +84,12 @@ main img {
     box-shadow: 0 0 30px gray;
 }
 
+/* Paragraphs */
 p {
     padding: 0;
 }
 
+/* Footer */
 footer {
     margin-top: 15px;
     border-top: 1px solid var(--text-dark);
@@ -65,7 +98,8 @@ footer {
 
 /* ---------------------------------------------------------------------------------------
    Class Selectors
------------------------------------------------------------------------------------------- */
+--------------------------------------------------------------------------------------- */
+
 .box {
     margin: 1rem;
     padding: 1rem;
@@ -98,12 +132,4 @@ footer {
     padding: 0.3rem 0.6rem;
     border-radius: 5px;
     font-weight: bold;
-}
-
-aside {
-    position: relative;
-    width: 20rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
 }
