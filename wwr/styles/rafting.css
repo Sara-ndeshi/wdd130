@@ -188,15 +188,6 @@ footer .socialmedia img {
   border-radius: 6px;
 }
 
-.map-container iframe {
-  border: 2px solid var(--accent1-color);
-  border-radius: 8px;
-  width: 100%;
-  max-width: 600px;
-  height: 450px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-}
-
 /* Employee Profile Section */
 .employee-profiles {
   display: flex;
